@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/countryCodeHolder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rlClickConsumer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/linear_flag_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/google_1x"
+            android:layout_marginRight="@dimen/google_1x">
+
+            <LinearLayout
+                android:id="@+id/linear_flag_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/image_flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0.5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/flag_india" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_selectedCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/google_1x"
+            android:layout_marginRight="@dimen/google_1x"
+            android:singleLine="true"
+            android:text="+350"
+            android:textColor="#687171"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView_arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_arrow_down" />
+
+    </LinearLayout>
+</LinearLayout>

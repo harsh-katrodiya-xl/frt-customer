@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".view.activity.VerifyPhoneActivity">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/signInTitle"
+        style="@style/bold26BlueTextLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_21sdp"
+        android:text="Verify Phone\nNumber"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical"
+            tools:context=".view.fragment.SignInFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFullNameLBL"
+                    style="@style/regular14DarkGreyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="OTP Verification" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.frt.customer.util.CustomOtpView
+                        android:id="@+id/edtOTPView"
+                        style="@style/regular14DarkGreyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:orientation="horizontal"
+                        app:hint="@string/hint"
+                        app:otp_gravity="center"
+                        app:otp_maxLength="1"
+                        app:otp_textSize="@dimen/_18ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMsg"
+                    style="@style/regularBlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I didn’t receive a code!"
+                    android:textAlignment="center"
+                    android:textColor="@color/color687171"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tvResend"
+                    style="@style/regularBlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="Resend"
+                    android:textAlignment="center"
+                    android:textColor="@color/color124D7C"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/tvVerify"
+                    style="@style/mediumwhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_color_primary_solid"
+                    android:gravity="center"
+                    android:text="Verify"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_16ssp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

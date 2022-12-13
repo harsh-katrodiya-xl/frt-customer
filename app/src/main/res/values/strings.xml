@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FRT</string>
+    <string name="hint">⬤</string>
+    <string name="offers">Offers/Coupons</string>
+    <string name="Explore">Explore</string>
+    <string name="whatyouwant">What do you want to do, John.</string>
+    <string name="more">More</string>
+    <string name="home">Home</string>
+    <string name="myorder">My Orders</string>
+    <string name="payment">Payment</string>
+    <string name="notification">Notification</string>
+    <string name="help">Help &amp; Support</string>
+    <string name="setting">Setting</string>
+    <string name="google_maps_key">AIzaSyCFHh8uvFF5uXhTbQ1yLYJfHNRNrndtoys</string>
+    <string name="done">Done</string>
+
+
+</resources>
